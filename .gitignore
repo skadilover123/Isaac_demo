@@ -1,0 +1,40 @@
+# ============ Unity 生成的临时/缓存目录（不要上传） ============
+# Library 是最大的目录，每次打开工程会重新生成，绝对不可提交
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emory[Cc]aptures/
+/ExportedObj/
+.consulo/
+
+# ============ IDE / 编辑器缓存 ============
+.vs/
+.idea/
+*.csproj
+*.unityproj
+*.sln
+*.sln.dotSettings
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+[Rr]ecentItems*
+
+# ============ 操作系统文件 ============
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ============ WorkBuddy 助手数据（非项目内容，含本地记忆） ============
+.workbuddy/
+
+# ============ 本地历史 ============
+/.history/

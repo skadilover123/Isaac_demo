@@ -1,0 +1,35 @@
+# 统一换行符为 LF，避免 Windows / macOS 协作时冲突
+* text=auto eol=lf
+
+# Unity 文本资源：按文本处理，便于 diff/merge
+*.meta text eol=lf
+*.unity text eol=lf
+*.prefab text eol=lf
+*.asset text eol=lf
+*.mat text eol=lf
+*.anim text eol=lf
+*.controller text eol=lf
+*.overrideController text eol=lf
+*.inputactions text eol=lf
+*.shader text eol=lf
+*.compute text eol=lf
+*.cginc text eol=lf
+*.hlsl text eol=lf
+*.cs text diff=csharp eol=lf
+
+# Unity 二进制资源：标记为 binary，禁止文本合并（否则图片/音频会损坏）
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.bmp binary
+*.tga binary
+*.psd binary
+*.wav binary
+*.mp3 binary
+*.ogg binary
+*.ttf binary
+*.otf binary
+*.fbx binary
+*.dll binary
+*.zip binary
