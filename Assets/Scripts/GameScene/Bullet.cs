@@ -12,10 +12,7 @@ public class Bullet : MonoBehaviour
 
     private Rigidbody2D rb;
 
-    private void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
+    private void Awake() => rb = GetComponent<Rigidbody2D>();
 
     public void Fire(Vector2 direction)
     {

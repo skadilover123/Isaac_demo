@@ -12,10 +12,7 @@ public class Knockback : MonoBehaviour
     private Vector2 kbVelocity;
     private float kbTimer;
 
-    private void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
+    private void Awake() => rb = GetComponent<Rigidbody2D>();
 
     public void Apply(Vector2 direction)
     {

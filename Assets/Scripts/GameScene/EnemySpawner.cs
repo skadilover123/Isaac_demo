@@ -18,7 +18,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private int totalEnemies = 15;
 
     [Header("生成安全距离")]
-    [SerializeField] private float minPlayerDist = 3f;
+    [SerializeField] private float minPlayerDist = 10f;
 
     private float respawnTimer;
     private int spawnCount;
@@ -54,13 +54,6 @@ public class EnemySpawner : MonoBehaviour
     {
 
         if (spawnCount >= totalEnemies) return;
-
-        if (enemyPrefabs.Length == 0)
-        {
-            Debug.LogError("[EnemySpawner] 请先在 Inspector 中把敌人预制体拖进 enemyPrefabs 列表");
-            return;
-        }
-
         Enemy prefab = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
 
         Vector2 pos = RandomPos();

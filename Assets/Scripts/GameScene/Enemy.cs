@@ -16,10 +16,10 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected Animator anim;
     [SerializeField] protected Rigidbody2D rb;
 
-    public int Hp { get { return currentHp; } }
-    public int MaxHp { get { return maxHp; } }
-    public int Damage { get { return damage; } }
-    public bool IsDead { get { return isDead; } }
+    public int Hp => currentHp;
+    public int MaxHp => maxHp;
+    public int Damage => damage;
+    public bool IsDead => isDead;
 
     private int currentHp;
     private bool isDead;

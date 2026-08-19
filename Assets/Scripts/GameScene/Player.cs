@@ -43,10 +43,10 @@ public class Player : MonoBehaviour
     private AudioSource hurtAudio;
     private AudioSource deathAudio;
 
-    public int Hp { get { return hp; } }
-    public int MaxHp { get { return maxHp; } }
-    public bool IsDead { get { return isDead; } }
-    public bool IsInvulnerable { get { return invulnTimer > 0f; } }
+    public int Hp => hp;
+    public int MaxHp => maxHp;
+    public bool IsDead => isDead;
+    public bool IsInvulnerable => invulnTimer > 0f;
 
     public void StopControl()
     {
