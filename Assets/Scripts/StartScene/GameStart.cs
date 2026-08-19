@@ -39,7 +39,7 @@ public class GameStart : MonoBehaviour
             {
                 Application.Quit();
                 #if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;   // 编辑器里也能停
+                UnityEditor.EditorApplication.isPlaying = false;
                 #endif
             }
             if (Input.GetKeyDown(KeyCode.N))
